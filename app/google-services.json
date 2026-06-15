@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "310423877555",
+    "project_id": "evade-the-area-bd",
+    "storage_bucket": "evade-the-area-bd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310423877555:android:b4129ddb096d081f95bdc6",
+        "android_client_info": {
+          "package_name": "br.edu.evadethearea"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAynSWo2AD538eG3GdpxfjHON9E4EY154g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

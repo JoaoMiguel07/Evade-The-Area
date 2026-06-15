@@ -1,57 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@drawable/login_background"
+    android:background="@drawable/backgroundimage"
     android:padding="32dp">
 
     <ImageView
         android:id="@+id/image_logo"
         android:layout_width="280dp"
         android:layout_height="120dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="48dp"
+
         android:src="@drawable/logo" />
 
-    <EditText
-        android:id="@+id/edtUsuario"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:hint="Usuário ou E-mail"
-        android:inputType="textEmailAddress"
-        android:padding="12dp"
-        android:textSize="18sp"
-        android:backgroundTint="@color/white"
-        android:textColorHint="@color/white"
-        />
+        android:orientation="vertical"
+        android:layout_marginBottom="32dp">
 
-    <EditText
-        android:id="@+id/edtSenha"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:hint="Senha"
-        android:inputType="textPassword"
-        android:textSize="18sp"
-        android:padding="12dp"
-        android:backgroundTint="@color/white"
-        android:textColorHint="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-MAIL:"
+            android:textColor="#BA68C8"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-monospace"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/edtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Digite seu e-mail"
+            android:textColorHint="#66FFFFFF"
+            android:textColor="#FFFFFF"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:fontFamily="sans-serif-monospace"
+            android:layout_marginBottom="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="> SENHA:"
+            android:textColor="#BA68C8"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-monospace"
+            android:layout_marginBottom="6dp"/>
+
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Insira sua senha"
+            android:textColorHint="#44FFFFFF"
+            android:textColor="#FFFFFF"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:fontFamily="sans-serif-monospace" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnEntrar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@null"
         android:text="Entrar"
-        android:textSize="20sp" />
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-monospace"
+        android:layout_marginBottom="14dp" />
 
     <Button
         android:id="@+id/btnVoltar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="54dp"
+        android:backgroundTint="@null"
         android:text="Voltar"
-        android:textSize="18sp" />
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-monospace" />
 
 </LinearLayout>

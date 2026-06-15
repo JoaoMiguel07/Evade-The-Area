@@ -13,13 +13,13 @@
         android:theme="@style/Theme.EvadeTheArea"
         tools:targetApi="31">
         <activity
-            android:name=".TelaLogin"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".TelaJogo"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".TelaLogin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
